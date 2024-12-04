@@ -60,3 +60,14 @@ modelosAutos.forEach(function(model, i) {
     console.log(i + ' ' + model)
 })
 
+
+
+console.warn('3. Un coche va a toda velocidad por la carretera. Va a una velocidad de 135km/h y el limite es de 60km/h - Comprueba que si la velocidad es mayor al limite.- Si es mayor debes mostrar un mensaje por la consola indicando que baje la velocidad.- Si es menor el mensaje deberá ser que todo va bien.')
+
+let velocidad = prompt('A qué velocidad vas?');
+if (velocidad > 60) {
+    console.log('Excede el límite, baje la velocidad!!!')    
+} else {
+    console.log('Va a una velocidad permitida 👍🏽')
+}
+
