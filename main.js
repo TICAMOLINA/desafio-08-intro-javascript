@@ -25,6 +25,7 @@ console.log(conocimientos[2])
 console.log(conocimientos[3])
 console.log(conocimientos[4])
 
+// Definiendo nuevo valor para la variable "edad".
 edad = 50
 
 // Agrego un nuevo elemento al array usando método push:
@@ -35,4 +36,27 @@ console.log(conocimientos.length)
 console.log(conocimientos)
 console.log('Elemento que agregue al array: ' + conocimientos[5])
 console.log('Variable "edad" actualizada: ' + edad)
+
+
+
+console.warn('2. Debes crear las variables marca, velocidad, stock y modelos (array) - Todas esas variables deberán ser mostradas por pantalla (con una frase) [Usar template strings] - Debes mostrar cada uno de los elementos del array (sin hacerlo manualmente).')
+
+
+// En este caso y para hacerlo de otra manera defino un objeto, idealizando que la consigna hace alusión a un auto.-
+let automovil = {
+    marca: 'Volkswagen',
+    velocidad: 180,
+    stock: 10,
+    modelos: ['Gol', 'Vento', 'Passat', 'Golf', 'Tiguan', 'Tcross'],
+}
+
+console.log(`Bienvenido a nuestra concesionaria ${automovil.marca}, podemos ofrecerle los siguientes modelos de acuerdo a sus necesidades: ${automovil.modelos}. Notamos que está interesado particularmente en el modelo ${automovil.modelos[5]}. Le comento que es un vehículo con magníficas prestaciones, consumo eficiente y alcanza una velocidad máxima en ruta de ${automovil.velocidad} km/hora. Actualmente contamos con una disponibilidad de ${automovil.stock} unidades de diferentes colores, entre las cuales puede optar por el que más le guste.`)
+
+let modelosAutos = automovil.modelos
+console.log(modelosAutos)
+
+// Para mostrarlos automáticamente uso el método forEach:
+modelosAutos.forEach(function(model, i) {
+    console.log(i + ' ' + model)
+})
 
