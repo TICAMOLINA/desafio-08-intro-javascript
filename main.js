@@ -64,10 +64,23 @@ modelosAutos.forEach(function(model, i) {
 
 console.warn('3. Un coche va a toda velocidad por la carretera. Va a una velocidad de 135km/h y el limite es de 60km/h - Comprueba que si la velocidad es mayor al limite.- Si es mayor debes mostrar un mensaje por la consola indicando que baje la velocidad.- Si es menor el mensaje deberá ser que todo va bien.')
 
-let velocidad = prompt('A qué velocidad vas?');
-if (velocidad > 60) {
-    console.log('Excede el límite, baje la velocidad!!!')    
-} else {
-    console.log('Va a una velocidad permitida 👍🏽')
-}
+let velocidad = prompt('A qué velocidad vas?', 135);
+console.log(velocidad)
+if (velocidad > 60) console.log('Excede el límite, baje la velocidad!!!')    
+else console.log('Va a una velocidad permitida 👍🏽')
 
+
+
+
+console.warn('4. Dado un sueldo, crear una condicional comparando su sueldo.- Si el sueldo es $100.000 es excelente- Si el sueldo es menor o igual a $80.000 es muy bueno.- Si el sueldo es menor o igual a $60.000 es bueno.- Y si el sueldo es menor o igual a $40.000 es bajo.')
+
+let sueldo = prompt('Ingrese su sueldo mensual expresado en numeros sin signos')
+if (sueldo <= 40000) {
+    console.log('Su sueldo es bajo');
+} else if (sueldo <= 60000){
+    console.log('Su sueldo es bueno');
+} else if (sueldo <= 80000){
+    console.log('Su sueldo es muy bueno');
+} else {
+    console.log('Su sueldo es excelente');
+}
