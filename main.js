@@ -84,3 +84,13 @@ if (sueldo <= 40000) {
 } else {
     console.log('Su sueldo es excelente');
 }
+
+
+
+console.warn('5. Pidele al usuario su año de Nacimiento (ej: 1990) en una ventana emergente (prompt) y calcula cuántos años tiene actualmente.')
+
+let num1 = prompt('Ingrese el número del año actual')
+let num2 = prompt('Ingrese su año de nacimiento')
+let resultado = num1 - num2
+
+console.log(resultado);
